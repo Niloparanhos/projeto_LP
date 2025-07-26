@@ -1,0 +1,153 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c4355;
+  img {
+    max-width: 150px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    a {
+      font-size: 30px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.hero {
+  background-image: url("../Imagens/Hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #245b6ab4;
+    color: white;
+    gap: 15px;
+    padding: 30px 30px;
+    p {
+      font-size: 20px;
+      font-weight: 200;
+    }
+    h1 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+    a {
+      color: white;
+      font-size: 30px;
+      font-family: "Rock Salt", cursive;
+      font-weight: 400;
+      font-style: normal;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        font-size: 40px;
+        font-family: "Rock Salt", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.sobre {
+  background-color: #01070f;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  div {
+    max-width: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #64696e75;
+    gap: 30px;
+    padding: 40px 100px;
+    border: solid 1px white;
+    h2 {
+      font-family: "Rock Salt", cursive;
+      color: white;
+      font-size: 35px;
+    }
+
+    p {
+      color: white;
+      font-family: "Oswald", sans-serif;
+      font-weight: 200;
+      font-size: 25px;
+      text-align: center;
+      line-height: 5vh;
+    }
+  }
+}
+
+.list_albuns {
+  background-image: url("../Imagens/Banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  max-width: 100vw; /* não permite que nada passe da largura da tela */
+  overflow-x: hidden; /* esconde qualquer coisa que estoure */
+  padding: 0 20px;
+  .albuns_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #64696e75;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    max-width: 100%;
+  }
+  .album {
+    flex: 0 0 300px; /* Largura fixa dos cards */
+    background-color: #ffffff22;
+    padding: 20px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    color: white;
+    border: 1px solid #ffffff33;
+  }
+}
